@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>4x4 Lamborghini Gallery</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 20px;
+      background-color: #000000;
+      color: #fcd116;
+    }
+
+    h1 {
+      margin-bottom: 30px;
+      color: #fcd116;
+      text-shadow: 2px 2px #333;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 15px;
+    }
+
+    .gallery img,
+    .gallery iframe {
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      object-fit: cover;
+      border-radius: 10px;
+      border: 3px solid #fcd116;
+    }
+
+    .gallery iframe {
+      border: 3px solid #fcd116;
+    }
+
+    @media (max-width: 900px) {
+      .gallery {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 500px) {
+      .gallery {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Lamborghini Gallery</h1>
+  
+  <div class="gallery">
+    <img src="2022-Lamborghini-Aventador-1024x576.avif" alt="Image 1">
+    <img src="lamborghini-revuelto-insidehook.webp" alt="Image 2">
+    <img src="vlcsnap-2023-03-17-16h18m30s840.jpg"alt="Image 3">
+    <img src="2023-lamborghini-huracan-sterrato-135-66844c67d8d43.avif" alt="Image 4">
+
+    <iframe src="https://www.youtube.com/embed/MLcf6BfG9eU?autoplay=1&mute=1" title="Lamborghini Video 1" allow="autoplay" allowfullscreen></iframe>
+    <iframe src="https://www.youtube.com/embed/sitXeGjm4Mc?autoplay=1&mute=1" title="Lamborghini Video 2" allow="autoplay" allowfullscreen></iframe>
+    <iframe src="https://www.youtube.com/embed/Q8Sua4voNSA?autoplay=1&mute=1" title="Lamborghini Video 3" allow="autoplay" allowfullscreen></iframe>
+    <iframe src="https://www.youtube.com/embed/GTcmbw5_o-w?autoplay=1&mute=1" title="Lamborghini Video 4" allow="autoplay" allowfullscreen></iframe>
+  </div>
+
+</body>
+</html>

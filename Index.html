@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Lamborghini Blog</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif; 
+            margin: 0;
+            background: #222; 
+            color: white; 
+        }
+
+        header {
+            background: #F6A600; 
+            padding: 20px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        }
+
+        header h1 {
+            font-size: 2em;  
+            margin: 0;
+        }
+
+        header p {
+            font-size: 1.2em;
+            margin-top: 10px;
+        }
+
+        nav {
+            text-align: center;
+            background: #333; 
+            padding: 10px 0;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 18px;
+            text-transform: uppercase;
+        }
+
+        nav a:visited {
+            color: #800080;
+        }
+
+        nav a:hover {
+            color: #FFD700;
+            text-decoration: underline;
+        }
+
+        nav a:active {
+            color: #FF4500;
+        }
+
+        .content-wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            max-width: 1200px;
+            margin: auto;
+            padding: 30px;
+        }
+
+        main {
+            flex: 3;
+            min-width: 300px;
+        }
+
+        .sidebar {
+            flex: 1;
+            min-width: 250px;
+            background: #333;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        .sidebar h3 {
+            color: #FFD700;
+            font-size: 1.5em;
+        }
+
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .sidebar ul li {
+            margin: 10px 0;
+        }
+
+        .sidebar ul li a {
+            color: #fcd116;
+            text-decoration: none;
+        }
+
+        .sidebar ul li a:hover {
+            color: #fff;
+            text-decoration: underline;
+        }
+
+        .sidebar ul li a:visited {
+            color: #800080;
+        }
+
+        section {
+            background: #444;
+            padding: 30px;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        }
+
+        section h2 {
+            font-size: 2.5em;
+            color: #FFD700;
+            margin-bottom: 20px;
+        }
+
+        article {
+            background: #1a1a1a;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        article h3 {
+            font-size: 1.8em;
+            color: #FFD700;
+        }
+
+        article p {
+            font-size: 1.1em;
+            color: #ece7d3;
+        }
+
+        article a {
+            font-weight: bold;
+            color: #FFD700;
+            text-decoration: none;
+        }
+
+        article a:hover {
+            color: #fff;
+            text-decoration: underline;
+        }
+
+        article a:visited {
+            color: #800080;
+        }
+
+        footer {
+            background: #333;
+            text-align: center;
+            color: white;
+            padding: 1rem;
+            margin-top: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        }
+
+        @media screen and (max-width: 768px) {
+            .content-wrapper {
+                flex-direction: column;
+            }
+
+            header h1 {
+                font-size: 1.5em;
+            }
+
+            header p {
+                font-size: 1em;
+            }
+
+            nav a {
+                font-size: 16px;
+            }
+
+            .sidebar {
+                margin-top: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to the Lamborghini Blog</h1>
+        <p>Your ultimate source for Lamborghini news, reviews, and insights</p>
+    </header>
+
+    <nav>
+        <a href="#" onclick="showWelcome()">Home</a>
+        <a href="About.html">About Us</a>
+        <a href="Contactus.html">Contact Us</a>
+        <a href="Dashboard.html">Dashboard</a>
+        <a href="Gallery.html">Gallery</a>
+        <a href="Model.html">Models</a>
+    </nav>
+
+    <div class="content-wrapper">
+        <main>
+            <section>
+                <h2>Latest Lamborghini News</h2>
+                <article>
+                    <h3>The Lamborghini Aventador Ultimae: The Final Chapter</h3>
+                    <p>The Lamborghini Aventador Ultimae marks the final version of this legendary supercar...</p>
+                    <a href="https://www.lamborghini.com/en-en/history/aventador-lp-780-4-ultimae">Read More</a>
+                </article>
+                <article>
+                    <h3>Lamborghini's Vision for the Future: Electrification</h3>
+                    <p>Lamborghini is embracing the future with plans to electrify its models, starting with the Lamborghini Sián...</p>
+                    <a href="https://www.lamborghini.com/en-en/news/lamborghini-unveils-the-lanzador-future-electric-emotion">Read More</a>
+                </article>
+                <article>
+                    <h3>Lamborghini Unveils the All-New Urus Performante</h3>
+                    <p>The Urus Performante is a high-performance SUV set to take the market by storm.</p>
+                    <a href="https://www.lamborghini.com/en-en/news/lamborghini-unveils-the-urus-performante">Read More</a>
+                </article>
+                <article>
+                    <h3>Lamborghini Celebrates 60 Years of Excellence</h3>
+                    <p>In 2025, Lamborghini is celebrating its 60th anniversary with special events and exclusive models.</p>
+                    <a href="https://www.lamborghini.com/en-en/news/lamborghini-celebrates-60-years">Read More</a>
+                </article>
+            </section>
+        </main>
+
+        <aside class="sidebar">
+            <h3>What's New</h3>
+            <ul>
+                <li><a href="https://www.lamborghini.com/en-en/news/revuelto-debut">Lamborghini Revuelto Debuts</a></li>
+                <li><a href="https://www.lamborghini.com/en-en/news/lamborghini-sterrato">Huracán Sterrato: Off-Road Beast</a></li>
+                <li><a href="https://www.lamborghini.com/en-en/news/lamborghini-track-days">Track Days 2025 Announced</a></li>
+                <li><a href="https://www.lamborghini.com/en-en/news/ad-personam">New Ad Personam Configurator</a></li>
+                <li><a href="https://www.lamborghini.com/en-en/news/lamborghini-huracan-evo">Lamborghini Huracán EVO: A New Era</a></li>
+                <li><a href="https://www.lamborghini.com/en-en/news/lamborghini-innovation-sustainability">Innovation and Sustainability at Lamborghini</a></li>
+                <li><a href="https://www.lamborghini.com/en-en/news/lamborghini-25th-anniversary">Celebrating 25 Years of the Lamborghini Murciélago</a></li>
+                <li><a href="https://www.lamborghini.com/en-en/news/lamborghini-hybrid-future">The Hybrid Future of Lamborghini</a></li>
+            </ul>
+        </aside>
+    </div>
+
+    <footer>
+        <p>© 2025 Lamborghini Blog - All rights reserved.</p>
+    </footer>
+
+    <script>
+        function showWelcome() {
+            alert("Welcome to my website!");
+        }
+    </script>
+</body>
+</html>

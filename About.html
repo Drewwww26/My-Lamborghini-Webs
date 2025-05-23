@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About Me</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 50px;
+            background-color: #0a0a0a;
+            color: #f1c40f;
+        }
+        .container {
+            display: flex;
+            align-items: center;
+            gap: 50px;
+            max-width: 1200px;
+            margin: auto;
+            padding: 60px;
+            background: #1a1a1a;
+            border-radius: 20px;
+            box-shadow: 0 12px 30px rgba(241, 196, 15, 0.3);
+        }
+        .container img {
+            border-radius: 20px;
+            height: auto;
+            max-width: 400px;
+            border: 5px solid #f1c40f;
+        }
+        .text {
+            flex: 1;
+        }
+        .text h1 {
+            color: #f1c40f;
+            font-size: 3.5em;
+            margin-bottom: 20px;
+        }
+        .text h2 {
+            color: #ffffff;
+            font-weight: 300;
+            font-size: 2em;
+            margin-bottom: 25px;
+        }
+        .text p {
+            font-size: 20px;
+            color: #e0e0e0;
+            line-height: 2;
+            margin-bottom: 35px;
+        }
+        .btn {
+            background-color: #f1c40f;
+            color: #0a0a0a;
+            padding: 18px 36px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 18px;
+            font-weight: bold;
+            text-transform: uppercase;
+            transition: background 0.3s ease;
+        }
+        .btn:hover {
+            background-color: #d4ac0d;
+        }
+
+        @media (max-width: 900px) {
+            .container {
+                flex-direction: column;
+                text-align: center;
+                padding: 40px 20px;
+            }
+
+            .container img {
+                max-width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <img src="Pic for About us.jpg" alt="My Photo">
+    <div class="text">
+        <h1>Driven by Design</h1>
+        <h2>Creative Developer & UI Enthusiast</h2>
+        <p>Welcome to my world of precision, power, and purpose. I build high-performance websites with the same energy and elegance that defines a Lamborghini. 
+        From sleek interfaces to lightning-fast experiences, I merge creativity with code to deliver digital masterpieces. Let's create something iconic together.</p>
+        <button class="btn">Start the Engine</button>
+    </div>
+</div>
+
+</body>
+</html>

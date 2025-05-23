@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lamborghini Models</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #222;
+            color: white;
+        }
+
+        header {
+            background-color: #F6A600;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        nav {
+            background-color: #333;
+            text-align: center;
+            padding: 10px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+        }
+
+        nav a:hover {
+            color: #FFD700;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 30px auto;
+            padding: 20px;
+        }
+
+        .model-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        .model-card {
+            background-color: #333;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+            transition: transform 0.3s ease;
+        }
+
+        .model-card:hover {
+            transform: scale(1.02);
+        }
+
+        .model-card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+
+        .model-card .info {
+            padding: 15px;
+        }
+
+        .model-card h3 {
+            color: #FFD700;
+            margin: 0 0 10px;
+        }
+
+        .model-card p {
+            color: #ccc;
+            font-size: 0.95em;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Lamborghini Models</h1>
+    </header>
+
+    <div class="container">
+        <div class="model-grid">
+            <div class="model-card">
+                <div class="info">
+                    <h3>Lamborghini Aventador</h3>
+                    <p>Iconic V12 performance and bold design. The Aventador represents Lamborghini's engineering excellence.</p>
+                </div>
+            </div>
+
+            <div class="model-card">
+                <div class="info">
+                    <h3>Lamborghini Huracán EVO</h3>
+                    <p>With advanced aerodynamics and a 5.2L V10 engine, the Huracán EVO delivers thrilling driving dynamics.</p>
+                </div>
+            </div>
+
+            <div class="model-card">
+                <div class="info">
+                    <h3>Lamborghini Urus</h3>
+                    <p>The world's first Super SUV, blending luxury, power, and everyday practicality in one bold vehicle.</p>
+                </div>
+            </div>
+
+            <div class="model-card">
+                <div class="info">
+                    <h3>Lamborghini Sián FKP 37</h3>
+                    <p>The first hybrid Lamborghini. A V12 combined with electric boost for futuristic performance.</p>
+                </div>
+            </div>
+
+            <div class="model-card">
+                <div class="info">
+                    <h3>Lamborghini Revuelto</h3>
+                    <p>New plug-in hybrid V12 supercar with advanced aerodynamics and cutting-edge technology.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2025 Lamborghini Blog - All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
