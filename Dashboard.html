@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lamborghini Dashboard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Rajdhani:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Rajdhani', sans-serif;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            background-color: #fff; 
+            color: #000; 
+            transition: background-color 0.3s ease;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #000; 
+            color: white; 
+            padding: 20px 40px; 
+            font-size: 26px;
+            font-weight: bold;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); 
+            border-bottom: 4px solid #fff; 
+        }
+
+        header span:last-child {
+            font-size: 18px;
+            font-weight: normal;
+        }
+
+        .container {
+            display: flex;
+            flex: 1;
+        }
+
+        aside {
+            width: 300px; 
+            background-color: #333; 
+            color: white; 
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            gap: 25px; 
+            font-size: 18px;
+            transition: background-color 0.3s ease;
+            border-right: 2px solid #444; 
+}
+
+        }
+
+        aside p {
+            cursor: pointer;
+            transition: background-color 0.3s, color 0.3s;
+            padding: 12px;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+
+        aside p:hover {
+            background-color: #000; 
+            color: white; 
+            transform: scale(1.05);
+        }
+
+        .main-content {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 150px); 
+            gap: 20px; 
+            padding: 30px;
+            flex: 1;
+            background: #fff; 
+            animation: fadeIn 1s ease-out;
+        }
+
+        .box {
+            background-color: #333; 
+            border-radius: 8px;
+            box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.2); 
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 16px; 
+            font-weight: 600;
+            color: white; 		
+            cursor: pointer;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            padding: 15px; 
+            text-align: center;
+            overflow: hidden;
+        }
+
+        .box:hover {
+            transform: translateY(-12px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4); 
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @media (max-width: 768px) {
+            header {
+                font-size: 20px;
+            }
+
+            .container {
+                flex-direction: column;
+            }
+
+            aside {
+                width: 100%;
+                margin-bottom: 30px;
+            }
+
+            .main-content {
+                grid-template-columns: 1fr;
+                grid-template-rows: auto;
+            }
+
+            .box {
+                font-size: 18px; 
+                padding: 10px; 
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <span>Lamborghini Dashboard</span>
+        <span>Explore the Lamborghini World</span>
+    </header>
+    <div class="container">
+        <aside>
+            <p>Explore Models</p>
+            <p>Latest News</p>
+            <p>Official Events</p>
+            <p>Sales</p>
+            <p>Performance Insights</p>
+            <p>Contact Us</p>
+        </aside>
+        <section class="main-content">
+            <div class="box">Huracán - The Ultimate Driving Machine</div>
+            <div class="box">Aventador - A True Supercar Icon</div>
+            <div class="box">Urus - Luxury SUV Performance</div>
+            <div class="box">Sián - Cutting-Edge Hybrid Power</div>
+            <div class="box">Countach - A Legacy Reborn</div>
+            <div class="box">Lamborghini News - Latest Updates</div>
+        </section>
+    </div>
+</body>
+</html>
